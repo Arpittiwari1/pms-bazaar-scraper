@@ -5,13 +5,15 @@
 ![Web Scraping](https://img.shields.io/badge/Web%20Scraping-BeautifulSoup-green)
 ![Status](https://img.shields.io/badge/Project-Active-success)
 
-A **Python-based web scraping tool** that extracts Portfolio Management Service (PMS) data from [PMS Bazaar](https://pmsbazaar.com) and exports it into structured CSV datasets.
+A **Python-based web scraping tool** that extracts Portfolio Management Service (PMS) data from  
+ [PMS Bazaar](https://pmsbazaar.com) and exports it into structured CSV datasets.
 
-The scraper collects information about **Asset Management Companies (AMCs), Funds, and Portfolio Managers** and handles missing data gracefully.
+The scraper collects information about **Asset Management Companies (AMCs),  
+ Funds, and Portfolio Managers** and handles missing data gracefully.
 ```
 ---
 
-## 🚀 Project Highlights
+## Project Highlights
 
 - Scraped **300+ Asset Management Companies**
 - Extracted **fund performance metrics**
@@ -22,9 +24,9 @@ The scraper collects information about **Asset Management Companies (AMCs), Fund
 
 ---
 
-## 📊 Dataset Overview
+## Dataset Overview
 ```
-### 1️⃣ AMC Dataset (`amc.csv`)
+###  AMC Dataset (`amc.csv`)
 
 | Field      | Description |
 |------------|-------------|
@@ -38,7 +40,7 @@ The scraper collects information about **Asset Management Companies (AMCs), Fund
 
 ---
 
-### 2️⃣ Funds Dataset (`funds.csv`)
+###  Funds Dataset (`funds.csv`)
 
 | Field     | Description |
 |-----------|-------------|
@@ -53,7 +55,7 @@ The scraper collects information about **Asset Management Companies (AMCs), Fund
 
 ---
 
-### 3️⃣ Managers Dataset (`managers.csv`)
+### Managers Dataset (`managers.csv`)
 
 | Field       | Description |
 |-------------|-------------|
@@ -64,7 +66,7 @@ The scraper collects information about **Asset Management Companies (AMCs), Fund
 
 ---
 ```
-## 🗂 Project Structure
+## Project Structure
 ```
 
 pms-bazaar-scraper/  
@@ -112,7 +114,7 @@ CSV Dataset Export
 ---
 ```
 
-## 🛠 Technologies Used
+## Technologies Used
 
 - Python 3.13.11
 - BeautifulSoup
@@ -124,7 +126,7 @@ CSV Dataset Export
 
 ---
 
-## ⚡ Installation
+## Installation
 
 1. Clone the repository:
 
@@ -141,7 +143,7 @@ pip install -r requirements.txt
 
 ---
 
-## ▶️ Usage
+## Usage
 
 Run the scraper:
 
@@ -153,7 +155,7 @@ The extracted datasets will be saved inside the **output/** folder.
 
 ---
 
-## 📈 Dataset Counts
+## Dataset Counts
 
 ```
 Total AMCs scraped: 300+
@@ -163,7 +165,7 @@ Total Managers: 470+
 
 ---
 
-## 🧠 Learning Outcomes
+## Learning Outcomes
 
 * Built a **modular web scraping pipeline**
 * Handled **missing data** effectively
@@ -173,14 +175,14 @@ Total Managers: 470+
 
 ---
 
-## ⚖️ Disclaimer
+## Disclaimer
 ```
 This project is for **educational and research purposes only**.
 All data is publicly available and belongs to the respective owners.
 ```
 ---
 
-## 👤 Author
+## Author
 ```
 **Arpit Tiwari**
 
