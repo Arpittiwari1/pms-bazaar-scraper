@@ -1,26 +1,30 @@
 ```markdown
-# PMS Bazaar Data Scraper
+# PMS Bazaar Web Scraper
 
-A Python-based web scraping tool that extracts Portfolio Management Service (PMS) data from https://pmsbazaar.com and converts it into structured datasets.
+![Python](https://img.shields.io/badge/Python-3.x-blue)
+![Web Scraping](https://img.shields.io/badge/Web%20Scraping-BeautifulSoup-green)
+![Status](https://img.shields.io/badge/Project-Active-success)
 
-The scraper automatically collects information about **Asset Management Companies (AMCs), Funds, and Portfolio Managers** and exports the data into CSV files for analysis.
+A **Python-based web scraping tool** that extracts Portfolio Management Service (PMS) data from [PMS Bazaar](https://pmsbazaar.com) and exports it into structured CSV datasets.
 
+The scraper collects information about **Asset Management Companies (AMCs), Funds, and Portfolio Managers** and handles missing data gracefully.
+```
+---
 
-## Project Highlights
+## 🚀 Project Highlights
 
 - Scraped **300+ Asset Management Companies**
 - Extracted **fund performance metrics**
 - Collected **portfolio manager profiles**
-- Structured financial data into clean CSV datasets
-- Built using a modular scraping architecture
+- Structured financial data into **clean CSV datasets**
+- Modular scraper architecture for scalability
+- Handles missing data (`-`) when fields are unavailable
 
 ---
 
-## Dataset Overview
-
-The scraper generates the following datasets:
-
-### 1. AMC Dataset (`amc.csv`)
+## 📊 Dataset Overview
+```
+### 1️⃣ AMC Dataset (`amc.csv`)
 
 | Field      | Description |
 |------------|-------------|
@@ -34,7 +38,7 @@ The scraper generates the following datasets:
 
 ---
 
-### 2. Funds Dataset (`funds.csv`)
+### 2️⃣ Funds Dataset (`funds.csv`)
 
 | Field     | Description |
 |-----------|-------------|
@@ -49,7 +53,7 @@ The scraper generates the following datasets:
 
 ---
 
-### 3. Managers Dataset (`managers.csv`)
+### 3️⃣ Managers Dataset (`managers.csv`)
 
 | Field       | Description |
 |-------------|-------------|
@@ -59,75 +63,77 @@ The scraper generates the following datasets:
 | bio         | Manager profile description |
 
 ---
+```
+## 🗂 Project Structure
+```
 
-## Project Structure
+pms-bazaar-scraper/  
+│  
+├── final/  
+│   ├── amc_scraper.py  
+│   ├── directory_scraper.py  
+│   └── main.py  
+│
+├── output/  
+│   ├── amc.csv  
+│   ├── funds.csv  
+│   └── managers.csv  
+│
+|── requirements.txt  
+└── README.md  
 
 ```
 
-pms-bazaar-scraper
-│
-├── final
-|     ├── amc_scraper.py
-|     ├── directory_scraper.py
-|     ├── main.py
-│
-├── output
-│   ├── amc.csv
-│   ├── funds.csv
-│   └── managers.csv
-│
-├── requirements.txt
-└── README.md
-
-```
-## Missing Data Handling
-
-Some records may contain "-" values.  
-This indicates that the data was not available on the source website at the time of scraping.
 ---
+
+##  Missing Data Handling
+
+Some records may contain `"-"` values.  
+This indicates that the data was **not available** on the source website at the time of scraping.
 
 ## Scraper Workflow
+```
+PMS Bazaar Website  
+       │  
+       ▼  
+Directory Scraper  
+(Collects AMC Links)  
+       │  
+       ▼  
+AMC Scraper  
+(Extracts AMC, Funds, Managers Data)  
+       │  
+       ▼  
+Data Processing  
+       │  
+       ▼  
+CSV Dataset Export  
 
+---
 ```
 
- PMS Bazaar Website
-       │
-       ▼
- Directory Scraper
- (Collects AMC Links)
-       │
-       ▼
-   AMC Scraper
-(Extracts AMC, Funds, Managers Data)
-      │
-      ▼
- Data Processing
-      │
-      ▼
-CSV Dataset Export
+## 🛠 Technologies Used
 
-````
-
----
-
-## Technologies Used
-
-- Python
+- Python 3.13.11
 - BeautifulSoup
 - Requests
+- lxml
+- tqdm
+- python-dotenv
+- numpy
 
 ---
 
-## Installation
+## ⚡ Installation
 
-Clone the repository:
+1. Clone the repository:
 
 ```bash
 git clone https://github.com/yourusername/pms-bazaar-scraper.git
 cd pms-bazaar-scraper
 ````
 
-Install required libraries:
+2. Install dependencies:
 
 ```bash
 pip install -r requirements.txt
@@ -135,61 +141,48 @@ pip install -r requirements.txt
 
 ---
 
-## Usage
+## ▶️ Usage
 
 Run the scraper:
 
 ```bash
-python main.py
+python final/main.py
 ```
 
-The script will scrape PMS Bazaar and store the extracted datasets in the **output/** directory.
+The extracted datasets will be saved inside the **output/** folder.
 
 ---
 
-## Sample Output
+## 📈 Dataset Counts
 
-Example from `amc.csv`:
-
-| amc_name          | aum      | clients | approach |
-| ----------------- | -------- | ------- | -------- |
-| Example Capital   | ₹1200 Cr | 1500    | Growth   |
-| Alpha Investments | ₹850 Cr  | 900     | Value    |
-
----
-
-## Learning Outcomes
-
-This project helped me gain practical experience in:
-
-* Web scraping pipelines
-* Parsing HTML with BeautifulSoup
-* Data extraction and structuring
-* Building modular Python scripts
-* Exporting datasets for analysis
-
----
-**dataset count**:
 ```
 Total AMCs scraped: 300+
 Total Funds records: 550+
 Total Managers: 470+
-``
+```
 
-## Disclaimer
+---
 
-This project is built for **educational and research purposes only**.
+## 🧠 Learning Outcomes
 
-All data is collected from publicly available sources and belongs to their respective owners.
+* Built a **modular web scraping pipeline**
+* Handled **missing data** effectively
+* Parsed HTML content using **BeautifulSoup**
+* Exported structured datasets to **CSV**
+* Organized a Python project professionally
+
+---
+
+## ⚖️ Disclaimer
+```
+This project is for **educational and research purposes only**.
+All data is publicly available and belongs to the respective owners.
 ```
 ---
 
+## 👤 Author
 ```
-## Author
+**Arpit Tiwari**
 
-**Arpit tiwari**
-
-If you found this project useful, feel free to ⭐ the repository.
----
+If you found this project useful, feel free to ⭐ the repository!
 ```
-
