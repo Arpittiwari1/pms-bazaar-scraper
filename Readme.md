@@ -1,4 +1,3 @@
-```markdown
 # PMS Bazaar Web Scraper
 
 ![Python](https://img.shields.io/badge/Python-3.x-blue)
@@ -10,7 +9,6 @@ A **Python-based web scraping tool** that extracts Portfolio Management Service 
 
 The scraper collects information about **Asset Management Companies (AMCs),  
  Funds, and Portfolio Managers** and handles missing data gracefully.
-```
 ---
 
 ## Project Highlights
